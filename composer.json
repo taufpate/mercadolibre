@@ -1,0 +1,16 @@
+"repositories": {
+  "type": "package",
+  "package": {
+    "name": "vcoud/mercadolibre",
+    "version": "dev-master",
+    "source": {
+      "url": "git://github.com/vcoud/mercadolibre",
+      "reference": "master"
+    },
+    "autoload": {
+      "psr-0": {
+        "Vcoud\\Mercadolibre": "src"
+      }
+    }
+  }
+}
