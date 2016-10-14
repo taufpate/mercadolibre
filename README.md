@@ -1,6 +1,6 @@
 # MercadoLibre's PHP SDK Composer Package
 
-This is the unofficial PHP SDK for MercadoLibre's Platform.
+This is a fork of [MercadoLibre's PHP Sdk](https://github.com/mercadolibre/php-sdk), we only make it easy to implement on laravel projects
 
 ## How do I install it?
 
@@ -92,16 +92,3 @@ $params = array('access_token' => $access_token);
 $response = $meli->delete('/questions/123', $params)
 ```
 
-## Examples
-
-Don't forget to check out our examples codes in the folder [examples](https://github.com/mercadolibre/php-sdk/tree/master/examples)
-
-## Community
-
-You can contact us if you have questions using the standard communication channels described in the [developer's site](http://developers.mercadolibre.com/community/)
-
-## I want to contribute!
-
-That is great! Just fork the project in github. Create a topic branch, write some code, and add some tests for your new code.
-
-Thanks for helping!
