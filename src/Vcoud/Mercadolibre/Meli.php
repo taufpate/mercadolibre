@@ -1,5 +1,7 @@
 <?php
 
+namespace Vcoud\Mercadolibre;
+
 class Meli {
 
 	/**
