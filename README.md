@@ -1,3 +1,6 @@
+[![Packagist](https://img.shields.io/packagist/v/symfony/symfony.svg?maxAge=2592000)](https://packagist.org/packages/vcoud/mercadolibre)
+[![mercadolibre-sdk](https://img.shields.io/badge/mercadolibre--sdk-1.1.0-yellow.svg)](https://github.com/mercadolibre/php-sdk)
+
 # MercadoLibre's PHP SDK Composer Package
 
 This is a fork of [MercadoLibre's PHP Sdk](https://github.com/mercadolibre/php-sdk), we only make it easy to implement on laravel projects
