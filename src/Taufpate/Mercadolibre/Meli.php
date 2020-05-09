@@ -1,5 +1,7 @@
 <?php
 
+namespace Taufpate\Mercadolibre;
+
 class Meli {
 
 	/**
