@@ -1,4 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/vcoud/mercadolibre/version)](https://packagist.org/packages/vcoud/mercadolibre)
+[![Latest Stable Version](https://poser.pugx.org/taufpate/mercadolibre/version)](https://packagist.org/packages/taufpate/mercadolibre)
 [![mercadolibre-sdk](https://img.shields.io/badge/mercadolibre--sdk-1.1.0-yellow.svg)](https://github.com/mercadolibre/php-sdk)
 
 # MercadoLibre's PHP SDK Composer Package
@@ -7,7 +7,7 @@ This is a fork of [MercadoLibre's PHP Sdk](https://github.com/mercadolibre/php-s
 
 ## How do I install it?
 
-       composer require vcoud/mercadolibre
+       composer require taufpate/mercadolibre
 
 ## How do I use it?
 
@@ -16,7 +16,7 @@ The first thing to do is to instance a ```Meli``` class. You'll need to give a `
 ### Create an instance of Meli class
 Simple like this
 ```php
-use Vcoud\Mercadolibre\Meli;
+use Taufpate\Mercadolibre\Meli;
 
 $meli = new Meli('1234', 'a secret');
 ```

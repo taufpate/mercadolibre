@@ -1,13 +1,11 @@
 <?php
 
-namespace Vcoud\Mercadolibre;
-
 class Meli {
 
 	/**
-	 * @version 1.1.0
+	 * @version 2.0.0
 	 */
-    const VERSION  = "1.1.0";
+    const VERSION  = "2.0.0";
 
     /**
      * @var $API_ROOT_URL is a main URL to access the Meli API's.
@@ -28,14 +26,15 @@ class Meli {
         "MPA" => "https://auth.mercadolibre.com.pa", // Panama
         "MPE" => "https://auth.mercadolibre.com.pe", // Peru
         "MPT" => "https://auth.mercadolibre.com.pt", // Prtugal
-        "MRD" => "https://auth.mercadolibre.com.do"  // Dominicana
+        "MRD" => "https://auth.mercadolibre.com.do",  // Dominicana
+        "CBT" => "https://global-selling.mercadolibre.com"  // CBT
     );
 
     /**
      * Configuration for CURL
      */
     public static $CURL_OPTS = array(
-        CURLOPT_USERAGENT => "MELI-PHP-SDK-1.1.0", 
+        CURLOPT_USERAGENT => "MELI-PHP-SDK-2.0.0", 
         CURLOPT_SSL_VERIFYPEER => true,
         CURLOPT_CONNECTTIMEOUT => 10, 
         CURLOPT_RETURNTRANSFER => 1, 
@@ -202,7 +201,7 @@ class Meli {
      * @param array $params
      * @return mixed
      */
-    public function put($path, $body = null, $params) {
+    public function put($path, $body = null, $params = array()) {
         $body = json_encode($body);
         $opts = array(
             CURLOPT_HTTPHEADER => array('Content-Type: application/json'),
@@ -283,15 +282,12 @@ class Meli {
      * @return string
      */
     public function make_path($path, $params = array()) {
-        if (!preg_match("/^http/", $path)) {
-            if (!preg_match("/^\//", $path)) {
-                $path = '/'.$path;
-            }
-            $uri = self::$API_ROOT_URL.$path;
-        } else {
-            $uri = $path;
+        if (!preg_match("/^\//", $path)) {
+            $path = '/' . $path;
         }
 
+        $uri = self::$API_ROOT_URL . $path;
+        
         if(!empty($params)) {
             $paramsJoined = array();
 

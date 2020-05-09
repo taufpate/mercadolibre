@@ -1,24 +1,24 @@
 {
-  "name": "vcoud/mercadolibre",
+  "name": "taufpate/mercadolibre",
   "type": "library",
   "description": "Mercadolibre SDK Composer Package",
-  "keywords": ["sdk", "mercadolibre", "vcoud"],
-  "homepage": "https://github.com/vcoud/mercadolibre",
+  "keywords": ["sdk", "mercadolibre", "taufpate"],
+  "homepage": "https://github.com/taufpate/mercadolibre",
   "license": "MIT",
   "authors": [
     {
-      "name": "Keyvin Duque",
-      "email": "thkeyduq@gmail.com",
-      "homepage": "http://vcoud.com",
+      "name": "Mauricio Duran",
+      "email": "github@taufpate.com",
+      "homepage": "http://taufpate.com",
       "role": "CTO"
     }
   ],
   "require": {
-    "php": ">=5.3.0"
+    "php": ">=7.0.0"
   },
   "autoload": {
     "psr-4": {
-      "Vcoud\\Mercadolibre\\": "src/Vcoud/Mercadolibre"
+      "Taufpate\\Mercadolibre\\": "src/Taufpate/Mercadolibre"
     }
   },
   "minimun-stability": "stable"
